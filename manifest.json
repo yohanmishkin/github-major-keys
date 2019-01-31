@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+  "name": "Github keyboard shortcuts",
+  "version": "0.1",
+
+  "applications": {
+    "gecko": {
+       "strict_min_version": "56.0"
+    }
+  },
+
+  "description": "Keyboard shortcuts for the tabs on a Github pull request.",
+
+  "icons": {
+  },
+
+  "browser_action": {
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "commands": {
+    "goto-conversation": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+8"
+      },
+      "description": "Go to conversation tab"
+    },
+    "goto-commits": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+9"
+      },
+      "description": "Go to commits tab"
+    },
+    "goto-files": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+0"
+      },
+      "description": "Go to files tab"
+    }
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+}
