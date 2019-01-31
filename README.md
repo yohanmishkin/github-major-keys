@@ -1,4 +1,4 @@
-# github major keys 🔑 🔑
+#  🔑 github major keys
 
 Some missing keyboard shortcuts for github
 
