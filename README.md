@@ -1,4 +1,6 @@
-# Some missing keyboard shortcuts for github
+# github major keys 🔑 🔑
+
+Some missing keyboard shortcuts for github
 
 ## When viewing a pull request
 - `cmd+shift+8` == goto conversation
