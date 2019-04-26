@@ -6,27 +6,8 @@ browser.commands.onCommand.addListener(function(command) {
     let currentUrl = currentTab.url;
 
     if (/https:\/\/github.com\/.*\/.*\/pull\/\d*/.test(currentUrl)) {
-
-      let baseUrl = currentUrl.split('/').filter((fragment, index) => {
-        if (index < 7) {
-          return true;
-        }
-      }).join('/');
-
-      switch (command) {
-        case "goto-conversation":
-          browser.tabs.update(currentTab.id, { url: `${baseUrl}` });
-          break;
-
-        case "goto-commits":
-          browser.tabs.update(currentTab.id, { url: `${baseUrl}/commits` });
-          break;
-
-        case "goto-files":
-          browser.tabs.update(currentTab.id, { url: `${baseUrl}/files` });
-          break;
-
-      }
+      browser.tabs.executeScript({ file: 'content-script.js' });
+      browser.tabs.sendMessage(currentTab.id, { command });
     }
   }).catch(ex => {
     debugger;
