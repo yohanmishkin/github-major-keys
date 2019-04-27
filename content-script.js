@@ -25,6 +25,12 @@
       case "goto-files":
         document.querySelectorAll('.tabnav-tab')[3].click();
         break;
+
+      case "toggle-file-details":
+        document.querySelectorAll('button.btn-octicon.js-details-target').forEach(button => {
+          if (button) button.click();
+        });
+        break;
     }
   });
 })();

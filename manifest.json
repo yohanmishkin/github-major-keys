@@ -39,6 +39,12 @@
         "default": "Ctrl+Shift+0"
       },
       "description": "Go to files tab"
+    },
+    "toggle-file-details": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+I"
+      },
+      "description": "Toggle file details"
     }
   },
 
