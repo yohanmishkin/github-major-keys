@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github keyboard shortcuts",
-  "version": "0.2",
+  "version": "0.3.2",
 
   "applications": {
     "gecko": {
@@ -12,8 +12,10 @@
   "description": "Keyboard shortcuts for the tabs on a Github pull request.",
 
   "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
   },
-
+  
   "browser_action": {
   },
 
